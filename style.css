@@ -44,6 +44,12 @@ ol, ul {
     padding: 2% 0;
 }
 
+.logo-container h1{
+    font-family: 'Norse';
+    font-weight: bold;
+    font-size: 400%;
+}
+
 .logo{
     height: 75px;
 }
@@ -88,6 +94,7 @@ ol, ul {
 .sub-container:nth-child(2){
     background-color: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 2% 10% 2% 5%;
 }
 
 fieldset{
@@ -111,4 +118,44 @@ legend{
     flex-direction: column;
     padding: 2%;
     font-size: x-small;
+    margin-right: 20px;
+}
+
+input{
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid #E5E7EB;
+    padding: 2px;
+    padding-left: 5px;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+.sub-container button{
+    background-color: #596D48;
+    width: max-content;
+    color: white;
+    padding: 2% 5%;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+
+.sub-container:last-child{
+    font-size: x-small;
+}
+
+.sub-container:last-child a{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url(/odin-signup/Norse-Bold.otf) format('opentype');
 }
